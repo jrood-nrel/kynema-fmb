@@ -29,9 +29,11 @@ struct ControllerInput {
     bool torque_control_enabled{false};  ///< Flag to enable torque control
     bool yaw_control_enabled{false};     ///< Flag to enable yaw control
     bool read_checkpoint{false};         ///< Flag to enable restart reading
-    PitchActuatorType pitch_actuator_type{PitchActuatorType::POSITION
+    PitchActuatorType pitch_actuator_type{
+        PitchActuatorType::POSITION
     };  ///< Pitch actuator type (default: 0 for position)
-    PitchControlType pitch_control_type{PitchControlType::COLLECTIVE
+    PitchControlType pitch_control_type{
+        PitchControlType::COLLECTIVE
     };  ///< Pitch control type (default: 0 for collective)
     double time_step{0.0};         ///< Time step for controller simulation (s)
     size_t n_blades{0};            ///< Number of blades

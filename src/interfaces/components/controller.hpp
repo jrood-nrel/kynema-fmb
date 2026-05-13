@@ -126,4 +126,4 @@ private:
         controller_function_;  //< Function pointer to the controller function
 };
 
-}  // namespace kynema::interfaces::components
+}  // namespace kynema_fmb::interfaces::components
