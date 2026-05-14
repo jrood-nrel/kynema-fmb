@@ -410,7 +410,7 @@ int main() {
             .EnableYawControl()
             .EnablePitchControl()
             .EnableTorqueControl()
-            .SetNumberOfBlades(static_cast<unsigned int>(n_blades))
+            .SetNumberOfBlades(static_cast<size_t>(n_blades))
             .SetTimeStep(time_step)
             .SetLibraryPath(static_cast<const char*>(KYNEMA_FMB_ROSCO_LIBRARY))
             .SetFunctionName("DISCON")

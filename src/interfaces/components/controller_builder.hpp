@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cstddef>
 #include <string>
 #include <string_view>
 
@@ -36,7 +37,7 @@ public:
     }
 
     // Set number of blades
-    ControllerBuilder& SetNumberOfBlades(uint n_blades) {
+    ControllerBuilder& SetNumberOfBlades(size_t n_blades) {
         input.n_blades = n_blades;
         return *this;
     }
