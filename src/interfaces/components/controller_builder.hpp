@@ -54,15 +54,9 @@ public:
         return *this;
     }
 
-    // Set initial rotor speed (rad/s)
-    ControllerBuilder& SetRotorSpeed(double speed) {
-        input.rotor_speed = speed;
-        return *this;
-    }
-
-    // Set initial power (W)
-    ControllerBuilder& SetPower(double power) {
-        input.power = power;
+    // Set initial pitch angle (radians)
+    ControllerBuilder& SetPitchAngle(double angle) {
+        input.pitch_angle = angle;
         return *this;
     }
 
