@@ -44,11 +44,6 @@ jobs:
           path: kynema-fmb
       - name: Test Kynema-FMB
         run: |
-          # Find the gfortran compiler and set the FC environment variable
-          export FC=$(find /opt/homebrew/ -name gfortran | tr ' ' '\n' | grep "/gcc/.*gfortran")
-          brew install hdf5
-          brew install netcdf
-          brew install llvm
           source spack/share/spack/setup-env.sh
           spack load kokkos-kernels suite-sparse superlu cppcheck googletest yaml-cpp rosco@2.9.0 openfast eigen
           cd kynema-fmb
