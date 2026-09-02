@@ -49,7 +49,7 @@ jobs:
       - name: Test Kynema-FMB
         run: |
           source spack/share/spack/setup-env.sh
-          spack load kokkos-kernels suite-sparse superlu googletest cppcheck netcdf-c yaml-cpp rosco@2.9.0 openfast eigen
+          spack load kokkos-kernels suite-sparse superlu googletest cppcheck netcdf-c yaml-cpp rosco@2.9.0 eigen
           cd kynema-fmb
           mkdir build
           cd build
